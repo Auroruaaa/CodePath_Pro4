@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nsi-xF-y0s">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Forecast View Controller-->
+        <scene sceneID="bsJ-sn-UOf">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="Nsi-xF-y0s" customClass="ForecastViewController" customModule="Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4kz-p8-ebz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="08F-Zo-V1t">
+                                <rect key="frame" x="50" y="258.66666666666669" width="293" height="47.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Answer 1">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="answerTapped:" destination="Nsi-xF-y0s" eventType="touchUpInside" id="fk6-dr-Iqs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jrv-0I-BU5">
+                                <rect key="frame" x="50" y="326.33333333333331" width="293" height="47.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Answer 2">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="answerTapped:" destination="Nsi-xF-y0s" eventType="touchUpInside" id="7KA-Zd-HeF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="C6U-z5-6Sj">
+                                <rect key="frame" x="50" y="394" width="293" height="47.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Answer 3">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="answerTapped:" destination="Nsi-xF-y0s" eventType="touchUpInside" id="2Il-iN-pL7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kSy-g9-glq">
+                                <rect key="frame" x="50" y="461.66666666666669" width="293.00000000000006" height="47.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Answer 4">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="answerTapped:" destination="Nsi-xF-y0s" eventType="touchUpInside" id="hl3-2K-axE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main PageQuestion" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQL-mU-Qt2">
+                                <rect key="frame" x="54.666666666666657" y="148" width="284" height="40.666666666666657"/>
+                                <color key="backgroundColor" red="0.73018973629999995" green="0.91152021790000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="SwB-kf-y3h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="91a-kF-HDF"/>
+                        <color key="backgroundColor" red="0.56494111858221063" green="0.8242127406965124" blue="0.90278672680412375" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="08F-Zo-V1t" firstAttribute="centerX" secondItem="4kz-p8-ebz" secondAttribute="centerX" id="1nX-9L-0j1"/>
+                            <constraint firstItem="C6U-z5-6Sj" firstAttribute="centerX" secondItem="4kz-p8-ebz" secondAttribute="centerX" id="D9w-Qj-Ygc"/>
+                            <constraint firstItem="jrv-0I-BU5" firstAttribute="leading" secondItem="91a-kF-HDF" secondAttribute="leading" constant="50" id="DLm-FM-l61"/>
+                            <constraint firstItem="91a-kF-HDF" firstAttribute="trailing" secondItem="08F-Zo-V1t" secondAttribute="trailing" constant="50" id="Iab-Hv-PfI"/>
+                            <constraint firstItem="FQL-mU-Qt2" firstAttribute="top" secondItem="91a-kF-HDF" secondAttribute="top" constant="30" id="K5w-nz-FD9"/>
+                            <constraint firstItem="jrv-0I-BU5" firstAttribute="centerX" secondItem="4kz-p8-ebz" secondAttribute="centerX" id="Kv4-Qi-c84"/>
+                            <constraint firstItem="C6U-z5-6Sj" firstAttribute="leading" secondItem="91a-kF-HDF" secondAttribute="leading" constant="50" id="MST-fK-FYn"/>
+                            <constraint firstItem="08F-Zo-V1t" firstAttribute="top" secondItem="FQL-mU-Qt2" secondAttribute="bottom" constant="70" id="NwQ-1I-biN"/>
+                            <constraint firstItem="kSy-g9-glq" firstAttribute="centerX" secondItem="4kz-p8-ebz" secondAttribute="centerX" id="QDW-LO-1XQ"/>
+                            <constraint firstItem="jrv-0I-BU5" firstAttribute="top" secondItem="08F-Zo-V1t" secondAttribute="bottom" constant="20" id="URO-u7-BUz"/>
+                            <constraint firstItem="08F-Zo-V1t" firstAttribute="leading" secondItem="91a-kF-HDF" secondAttribute="leading" constant="50" id="Ukm-sX-z4z"/>
+                            <constraint firstItem="C6U-z5-6Sj" firstAttribute="top" secondItem="jrv-0I-BU5" secondAttribute="bottom" constant="20" id="c39-Mu-8Ql"/>
+                            <constraint firstItem="91a-kF-HDF" firstAttribute="trailing" secondItem="kSy-g9-glq" secondAttribute="trailing" constant="50" id="cq3-Tr-2bb"/>
+                            <constraint firstItem="91a-kF-HDF" firstAttribute="trailing" secondItem="jrv-0I-BU5" secondAttribute="trailing" constant="50" id="ely-wD-JsN"/>
+                            <constraint firstItem="kSy-g9-glq" firstAttribute="leading" secondItem="91a-kF-HDF" secondAttribute="leading" constant="50" id="fvY-06-Tmo"/>
+                            <constraint firstItem="kSy-g9-glq" firstAttribute="top" secondItem="C6U-z5-6Sj" secondAttribute="bottom" constant="20" id="i7f-Iu-WMg"/>
+                            <constraint firstItem="FQL-mU-Qt2" firstAttribute="centerX" secondItem="4kz-p8-ebz" secondAttribute="centerX" id="qBC-2Q-PtH"/>
+                            <constraint firstItem="91a-kF-HDF" firstAttribute="trailing" secondItem="C6U-z5-6Sj" secondAttribute="trailing" constant="50" id="vfr-rm-KVb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerButton1" destination="08F-Zo-V1t" id="5EK-7T-BZN"/>
+                        <outlet property="answerButton2" destination="jrv-0I-BU5" id="9rV-cz-jEg"/>
+                        <outlet property="answerButton3" destination="C6U-z5-6Sj" id="CHL-ub-fvU"/>
+                        <outlet property="answerButton4" destination="kSy-g9-glq" id="Fof-1Q-SaW"/>
+                        <outlet property="questionLabel" destination="FQL-mU-Qt2" id="nr1-UP-NZ5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kRg-QX-la0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-37.404580152671755" y="-28.169014084507044"/>
+        </scene>
+    </scenes>
+</document>
