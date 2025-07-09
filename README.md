@@ -29,7 +29,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-[Guide]](https://www.youtube.com/watch?v=GA92eKlYio4) .
+[My Trivia 2](https://github.com/Auroruaaa/CodePath_Pro4/blob/main/Trivia2_recording.gif) .
 
 ## Notes
 
